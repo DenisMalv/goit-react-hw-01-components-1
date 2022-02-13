@@ -1,7 +1,9 @@
+import PropTypes from 'prop-types';
+
 export default function Profile(props) {
   console.log(props);
   const { avatar,username,tag,location,stats} = props
-  return (<div className="profile">
+  return <div className="profile">
   <div className="description">
       <img
         src={avatar}
@@ -27,5 +29,13 @@ export default function Profile(props) {
       <span className="quantity">{stats.likes}</span>
     </li>
   </ul>
-  </div>)
+  </div>
+};
+
+Profile.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
 }
