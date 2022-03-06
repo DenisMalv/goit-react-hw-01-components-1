@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import css from './Statistics.module.css'
 
 
-export default function Statistics(props) {
-    console.log(props);
-    const { title, stats } = props
+export default function Statistics({ title, stats }) {
+    // console.log(props);
+    // const { title, stats } = props
     console.log(stats)
     console.log(title);
     if (!title) {
