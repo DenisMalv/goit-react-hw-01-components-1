@@ -2,9 +2,15 @@ import propTypes from "prop-types";
 import css from './TransactionHistory.module.css'
 
 export default function TransactionHistory({ items }) {
-    // console.log(props);
-    // const { items } = props
-    console.log(items);
+    
+    const Transaction = ({id,type,amount,currency }) => {
+        return <tr key={id}>
+                    <td>{ type}</td>
+                    <td>{ amount }</td>
+                    <td>{ currency }</td>
+                </tr>
+    }
+
     return (
         <section className={css.transactionHistorySection}>
             <table className={css.transactionHistory}>
@@ -15,15 +21,11 @@ export default function TransactionHistory({ items }) {
                     <th>Currency</th>
                     </tr>
                 </thead>
-                {items.map(transaction =>
-                    <tbody className={css.transactionBody} key={transaction.id}>
-                    <tr>
-                        <td>{ transaction.type}</td>
-                        <td>{ transaction.amount }</td>
-                        <td>{ transaction.currency }</td>
-                    </tr>
-                    </tbody>
-                )}            
+                <tbody className={css.transactionBody}>
+                    {items.map(({ id, type, amount, currency }) =>
+                        <Transaction key={id} type={type} amount={amount} currency={currency} />
+                    )}  
+                </tbody>        
             </table>
         </section>
     )
