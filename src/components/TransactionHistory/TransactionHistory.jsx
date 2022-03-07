@@ -25,7 +25,7 @@ export default function TransactionHistory({ items }) {
                     {items.map(({ id, type, amount, currency }) =>
                         <Transaction key={id} type={type} amount={amount} currency={currency} />
                     )}  
-                </tbody>        
+                </tbody>
             </table>
         </section>
     )

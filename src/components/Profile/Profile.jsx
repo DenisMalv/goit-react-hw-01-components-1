@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import { SectionProfile,Description,Avatar,Name,Tag,Location,Stats,Item,Label,Quantity } from './Profile.styled.jsx'
 
 export default function Profile({ avatar,username,tag,location,followers,views,likes}) {
-  // console.log(props);
-  // const { avatar,username,tag,location,stats} = props
+
   return <SectionProfile>
     <Description>
       <Avatar src={avatar} alt={username}/>
