@@ -1,7 +1,7 @@
 import propTypes from "prop-types";
 import css from './TransactionHistory.module.css'
 
-export default function TransactionHistory({ items }) {
+export const TransactionHistory = ({ items }) => {
 
     return (
         <section className={css.transactionHistorySection}>

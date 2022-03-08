@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 
-export const SectionProfile = styled.section`
+
+const SectionProfile = styled.section`
   margin: 10px auto 0;
   background-color: rgb(92, 149, 255);
   width: 300px;
@@ -8,30 +9,30 @@ export const SectionProfile = styled.section`
   border-radius: 5px;
 `;
 
-export const Description = styled.div`
+const Description = styled.div`
   text-align: center;
   margin-bottom: 16px;
 `;
 
-export const Avatar = styled.img`
+const Avatar = styled.img`
   background-color: aliceblue;
   margin-top: 20px;
   width: 100px;
   border-radius: 50%;
 `;
 
-export const Name = styled.p`
+const Name = styled.p`
   font-weight: 700;
   font-size: 20px;
 `;
 
-export const Tag = styled.p`
+const Tag = styled.p`
 `;
 
-export const Location = styled.p`
+const Location = styled.p`
 `;
 
-export const Stats = styled.ul`
+const Stats = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
@@ -39,7 +40,7 @@ export const Stats = styled.ul`
   justify-content: center;
 `;
 
-export const Item = styled.li`
+const Item = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,9 +50,11 @@ export const Item = styled.li`
   background-color: rgb(251, 255, 36);
 `;
 
-export const Label = styled.span`
+const Label = styled.span`
 `;
 
-export const Quantity = styled.span`
+const Quantity = styled.span`
     font-weight: 700;
 `;
+
+export { SectionProfile,Description,Avatar,Name,Tag,Location,Stats,Item,Label,Quantity }

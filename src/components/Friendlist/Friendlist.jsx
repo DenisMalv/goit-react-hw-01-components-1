@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from './Friendlist.module.css'
 import { FriendListItem } from '../FriendListItem/FriendListItem'
 
-export default function Friendlist({ friends }){
+export const Friendlist = ({ friends }) =>{
 
     return (
         <section className={css.friendlistSection}>

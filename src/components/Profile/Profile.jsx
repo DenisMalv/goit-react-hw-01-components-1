@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 // import css from './Profile.module.css'
 import { SectionProfile,Description,Avatar,Name,Tag,Location,Stats,Item,Label,Quantity } from './Profile.styled.jsx'
 
-export default function Profile({ avatar,username,tag,location,followers,views,likes}) {
+export const Profile = ({ avatar,username,tag,location,followers,views,likes}) => {
 
   return <SectionProfile>
     <Description>

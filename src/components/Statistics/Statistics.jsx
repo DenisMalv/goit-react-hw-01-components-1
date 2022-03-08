@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from './Statistics.module.css'
 
 
-export default function Statistics({ title, stats }) {
+export const Statistics = ({ title, stats }) => {
 
     return <section className={css.statistics}>
 
